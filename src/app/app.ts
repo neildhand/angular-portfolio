@@ -10,5 +10,10 @@ import { Hero } from "./features/hero/hero";
   styleUrl: './app.css'
 })
 export class App {
+  isPageColorDarkMode = signal(true);
 
+  togglePageColorMode(mode: boolean) {
+    console.log(mode);
+    this.isPageColorDarkMode.set(mode);
+  }
 }
