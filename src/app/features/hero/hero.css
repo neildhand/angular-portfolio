@@ -1,4 +1,5 @@
 .hero-section {
+    /* TODO: figure out how to make this more dynamic */
     /* for production use below: */
     background-image: url('/angular-portfolio/intro-bg.jpg');
     /* for local testing use below: */
