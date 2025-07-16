@@ -1,0 +1,86 @@
+<section
+  [class]="`${currentModeClasses().parentSection}flex items-center justify-center min-h-screen bg-[url('/intro-bg.jpg')] bg-cover bg-no-repeat bg-center bg-gradient-to-br font-mono`"
+>
+  @if(!isDarkModeInput()) {
+  <div class="absolute inset-0 bg-white/60 pointer-events-none"></div>
+  }
+  <div
+    class="max-w-7xl w-full text-center px-4 sm:px-8 md:px-16 lg:px-24 py-16 sm:py-24 md:py-32 lg:py-48 rounded-lg bg-zinc-800/40 shadow-lg z-10"
+  >
+    <h1
+      class="text-3xl sm:text-4x1 md:text-5x1 lg:text-6x1 font-extrabold mb-8 drop-shadow-lg"
+    >
+      <app-typewriter [text]="nameText"></app-typewriter>
+    </h1>
+    <div class="flex flex-col md:flex-row justify-center gap-8 mb-8">
+      <swiper-container
+        space-between="16"
+        navigation="true"
+        pagination="true"
+        loop="true"
+        style="width: 100%; max-width: 100vw; height: 400px"
+        [breakpoints]="{
+          '0': { slidesPerView: 1 },
+          '640': { slidesPerView: 1 },
+          '768': { slidesPerView: 2 },
+          '1024': { slidesPerView: 3 }
+        }"
+      >
+        <swiper-slide class="flex items-center justify-center h-[400px]">
+          <img
+            src="neil/neil-2.JPG"
+            alt="Me at the Matterhorn"
+            class="w-96 h-96 object-cover rounded-full mx-auto w-full h-full"
+          />
+        </swiper-slide>
+        <swiper-slide class="flex items-center justify-center h-[400px]">
+          <img
+            src="neil/neil-5.jpg"
+            alt="Me at a pumpkin patch"
+            class="w-96 h-96 object-cover rounded-full mx-auto h-full"
+          />
+        </swiper-slide>
+        <swiper-slide class="flex items-center justify-center h-[400px]">
+          <img
+            src="neil/neil-6.JPG"
+            alt="Me in Amalfi Coast"
+            class="w-96 h-96 object-cover rounded-full mx-auto h-full"
+          />
+        </swiper-slide>
+        <swiper-slide class="flex items-center justify-center h-[400px]">
+          <img
+            src="neil/neil-4.jpg"
+            alt="Me in Geneva Switzerland at La Jonction where two rivers meet"
+            class="w-96 h-96 object-cover rounded-full mx-auto h-full"
+          />
+        </swiper-slide>
+        <swiper-slide class="flex items-center justify-center h-[400px]">
+          <img
+            src="neil/neil-1.jpg"
+            alt="Me and Mt. Ranier"
+            class="w-96 h-96 object-cover rounded-full mx-auto h-full"
+          />
+        </swiper-slide>
+        <swiper-slide class="flex items-center justify-center h-[400px]">
+          <img
+            src="neil/neil-3.jpg"
+            alt="Me smiling"
+            class="w-96 h-96 object-cover rounded-full mx-auto h-full"
+          />
+        </swiper-slide>
+      </swiper-container>
+    </div>
+    <p class="text-xl mb-6 font-medium">
+      <app-typewriter [text]="title" [showCursor]="false" [delay]="nameText.length * 50"></app-typewriter>
+    </p>
+    <p class="mb-8 text-lg opacity-90">
+      <app-typewriter [text]="descriptionText" [showCursor]="false" [delay]="(nameText.length * 50) + (title.length * 50)" [speed]="20"></app-typewriter>
+    </p>
+    <a
+      href="#projects"
+      class="inline-block px-8 py-3 bg-zinc-900 hover:bg-stone-700 text-white font-semibold rounded-lg shadow transition duration-300"
+    >
+      View My Work
+    </a>
+  </div>
+</section>

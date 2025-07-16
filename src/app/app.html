@@ -1,1 +1,2 @@
-<app-header></app-header>
+<app-header (isDarkModeOutput)="togglePageColorMode($event)"></app-header>
+<app-hero [isDarkModeInput]="isPageColorDarkMode()"></app-hero>
