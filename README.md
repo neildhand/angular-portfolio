@@ -5,6 +5,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ## Deploy to gh-pages using git bash
 ```bash
 ng build --base-href="//angular-portfolio\\" --output-path docs
+ngh --dir=docs/browser
 ```
 ## Development server
 
