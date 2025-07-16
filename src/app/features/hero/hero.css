@@ -1,0 +1,6 @@
+.hero-section {
+    /* for production use below: */
+    background-image: url('/angular-portfolio/intro-bg.jpg');
+    /* for local testing use below: */
+    /* background-image: url('/intro-bg.jpg'); */
+}
