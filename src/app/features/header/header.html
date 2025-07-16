@@ -13,8 +13,10 @@
       </ul>
       <!-- CTA Button & Dark Mode Toggle -->
       <div class="flex items-center space-x-4">
-        <button [class]="currentModeClass().resumeBtn + 'hover:cursor-pointer font-semibold px-4 py-2 rounded-lg shadow transition'">Resume</button>
-        <!-- Dark mode toggle (simple icon for demo) -->
+        <a href="./Neil_Dhand_2025.pdf" target="_blank" rel="noopener noreferrer">
+          <button [class]="currentModeClass().resumeBtn + 'hover:cursor-pointer font-semibold px-4 py-2 rounded-lg shadow transition'">Resume</button>
+        </a>
+          <!-- Dark mode toggle (simple icon for demo) -->
         <button (click)="toggleDarkMode()" [class]="currentModeClass().darkModeToggleBtn + 'text-white hover:cursor-pointer focus:outline-none'">
             @if(!isDarkMode()) {
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" [attr.stroke]="currentModeClass().svgColor">
