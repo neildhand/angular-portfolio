@@ -1,8 +1,8 @@
 <section
-  [class]="`${currentModeClasses().parentSection}flex items-center justify-center min-h-screen bg-cover bg-no-repeat bg-center bg-gradient-to-br font-mono hero-section`"
+  [class]="`${currentModeClasses().parentSection}flex items-center justify-center min-h-[calc(100vh-64px)] pt-16 bg-cover bg-no-repeat bg-center bg-gradient-to-br font-mono hero-section`"
 >
   @if(!isDarkModeInput()) {
-  <div class="absolute inset-0 bg-white/60 pointer-events-none"></div>
+  <div class="fixed inset-0 bg-white/60 pointer-events-none"></div>
   }
   <div
     class="max-w-7xl w-full text-center px-4 sm:px-8 md:px-16 lg:px-24 py-16 sm:py-24 md:py-32 lg:py-48 rounded-lg bg-zinc-800/40 shadow-lg z-10"
